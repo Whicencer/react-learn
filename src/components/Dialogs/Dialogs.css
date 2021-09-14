@@ -1,0 +1,19 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.dialog__item {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.dialog__item:hover {
+    color: gold;
+}
+.dialog__item--active {
+    color: gold;
+}
+.dialogs__form {
+    margin-top: 20px;
+}

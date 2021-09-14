@@ -1,0 +1,23 @@
+.users {
+    margin-top: 20px;
+}
+.user {
+    max-width: 200px;
+    margin: 15px 0;
+}
+.user-image {
+    width: 100%;
+}
+.user-title {
+    font-size: 17px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.arrow {
+    cursor: pointer;
+    margin: 0 20px;
+}

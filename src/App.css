@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {list-style: none;}
+
+.wrapper {
+  height: 100vh;
+  max-width: 1380px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "header header" "sidebar content" "footer footer";
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: green;
+}
+.header__logo {
+  max-width: 150px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: rgb(241, 204, 123);
+  padding: 20px;
+}
+.friends {
+  margin-top: 70px;
+}
+.friends-list {
+  display: flex;
+  margin-top: 20px;
+}
+.friends-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 0 0;
+}
+.friends-list__item-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.friends-list__item-name {
+  color: #000;
+  font-size: 18px;
+}
+
+.wrapper-content {
+  grid-area: content;
+  background-color: rgb(70, 119, 255);
+  padding: 20px;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(172, 76, 76);
+  padding: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav__link.active {
+  color: rgb(129, 110, 0);
+}
+.nav__link:hover {
+  color: rgb(0, 0, 0);
+}

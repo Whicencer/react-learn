@@ -1,0 +1,13 @@
+.form-control {
+    outline: none;
+}
+.form-control.error input,
+.form-control.error textarea {
+    border: solid red 1px; 
+}
+.form-control.error span {
+    color: rgb(102, 0, 0);
+}
+.form-control--error {
+    color: red;
+}
